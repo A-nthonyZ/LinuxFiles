@@ -17,6 +17,16 @@ sudo apt remove \
 	hexchat-common \
 	hypnotix
 
+#install new software
+
+    #Github cli install
+    sudo apt install git
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+    sudo apt-add-repository https://cli.github.com/packages
+    sudo apt update
+    sudo apt install gh
+
+
 #grahical settings
 gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-Y-Dark-Purple'
 gsettings set org.cinnamon.desktop.interface icon-theme 'Mint-Y-Dark-Purple'
