@@ -24,4 +24,4 @@ gsettings set org.cinnamon.desktop.wm.preferences theme 'Mint-Y-Dark'
 gsettings set org.cinnamon.desktop.interface cursor-theme 'DMZ-Black'
 gsettings set org.cinnamon.theme name 'Mint-Y-Dark-Purple'
 gsettings set org.cinnamon.desktop.interface clock-use-24h false
-
+gsettings set org.cinnamon.desktop.interface clock-show-date true
