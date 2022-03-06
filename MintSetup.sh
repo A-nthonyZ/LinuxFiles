@@ -17,6 +17,28 @@ sudo apt remove \
 	hexchat-common \
 	hypnotix
 
+#grahical settings
+gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-Y-Dark-Purple'
+gsettings set org.cinnamon.desktop.interface icon-theme 'Mint-Y-Dark-Purple'
+gsettings set org.cinnamon.desktop.wm.preferences theme 'Mint-Y-Dark'
+gsettings set org.cinnamon.desktop.interface cursor-theme 'DMZ-Black'
+gsettings set org.cinnamon.theme name 'Mint-Y-Dark-Purple'
+gsettings set org.cinnamon.desktop.interface clock-use-24h false
+gsettings set org.cinnamon.desktop.interface clock-show-date true
+
+    #change background
+    mkdir /home/$USER/Pictures/wallpapers/
+    cp images/surface-pro-6-3840x2160_785686-mm-90.jpg /home/$USER/Pictures/wallpapers/SurfacePro6.jpg
+    gsettings set org.cinnamon.desktop.background picture-uri '/home/$USER/Pictures/wallpapers/SurfacePro6.jpg'
+
+#sound settings
+gsettings set org.cinnamon.sounds login-enabled false
+gsettings set org.cinnamon.sounds logout-enabled false
+gsettings set org.cinnamon.sounds switch-enabled false
+gsettings set org.cinnamon.sounds notification-enabled true
+gsettings set org.cinnamon.sounds tile-enabled false
+gsettings set org.cinnamon.desktop.sound maximum-volume 200
+
 #install new software
 
     #Github cli install
@@ -26,12 +48,3 @@ sudo apt remove \
     sudo apt update
     sudo apt install gh
 
-
-#grahical settings
-gsettings set org.cinnamon.desktop.interface gtk-theme 'Mint-Y-Dark-Purple'
-gsettings set org.cinnamon.desktop.interface icon-theme 'Mint-Y-Dark-Purple'
-gsettings set org.cinnamon.desktop.wm.preferences theme 'Mint-Y-Dark'
-gsettings set org.cinnamon.desktop.interface cursor-theme 'DMZ-Black'
-gsettings set org.cinnamon.theme name 'Mint-Y-Dark-Purple'
-gsettings set org.cinnamon.desktop.interface clock-use-24h false
-gsettings set org.cinnamon.desktop.interface clock-show-date true
