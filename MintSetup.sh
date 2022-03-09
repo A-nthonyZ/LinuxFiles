@@ -40,6 +40,17 @@ gsettings set org.cinnamon show-media-keys-osd 'small'
     dconf load /org/gnome/terminal/legacy/profiles:/ < ~/Documents/git/LinuxFiles/files/terminalProfiles.dconf
     dconf load /org/gnome/terminal/legacy/profiles:/:4a3418a3-ac81-4621-a0a8-54aaf030d792/ \
     < ~/Documents/git/LinuxFiles/files/myTerminalProfile.dconf
+
+#power settings
+    #power button
+    gsettings set org.cinnamon.settings-daemon.plugins.power button-power 'suspend'
+
+    #lock time
+    gsettings set org.cinnamon.settings-daemon.plugins.power sleep-display-ac 600
+
+    #suspend time
+    #set to 0 for never
+    #gsettings set org.cinnamon.settings-daemon.plugins.power sleep-inactive-ac-timeout
     
 #shortcut keys
     #Lock Screen
