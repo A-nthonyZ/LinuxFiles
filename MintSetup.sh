@@ -31,6 +31,9 @@ gsettings set org.cinnamon.desktop.interface clock-use-24h false
 gsettings set org.cinnamon.desktop.interface clock-show-date true
 gsettings set org.cinnamon show-media-keys-osd 'small'
 
+    #clock applet
+    sudo cp ~/Documents/git/LinuxFiles/files/46.json ~/.cinnamon/configs/calendar@cinnamon.org/
+
     #change background
     mkdir /home/$USER/Pictures/wallpapers/
     cp images/surface-pro-6-3840x2160_785686-mm-90.jpg /home/$USER/Pictures/wallpapers/SurfacePro6.jpg
