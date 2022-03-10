@@ -100,7 +100,7 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
 
     #Github cli install
     sudo apt -y install git
-    sudo apt-key -y adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
     sudo apt-add-repository https://cli.github.com/packages
     sudo apt update
     sudo apt -y install gh
