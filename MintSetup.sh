@@ -8,7 +8,7 @@ sudo apt update
 sudo apt-get update
 sudo apt -y upgrade
 sudo apt-get -y upgrade
-sudo apt -y autoremove
+sudo apt autoremove
 
 #privacy
 gsettings set org.cinnamon.desktop.privacy remember-recent-files false
