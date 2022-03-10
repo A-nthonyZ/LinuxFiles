@@ -95,6 +95,7 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
         youtube-dl \
         vlc \
         vim \
+        obs-studio\
 
     #Github cli install
     sudo apt -y install git
@@ -105,4 +106,10 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
 
     #pia install
     sh ~/Documents/git/LinuxFiles/files/pia-linux-3.3-06906.run
+
+    #install handbreak
+    sudo add-apt-repository -y ppa:stebbins/handbrake-releases
+    sudo apt-get update
+    sudo apt-get -y install handbrake-gtk
+
 
