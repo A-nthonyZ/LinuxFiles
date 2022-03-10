@@ -6,16 +6,16 @@
 #update everything
 sudo apt update
 sudo apt-get update
-sudo apt upgrade
-sudo apt-get upgrade
-sudo apt autoremove
+sudo apt -y upgrade
+sudo apt-get -y upgrade
+sudo apt -y autoremove
 
 #privacy
 gsettings set org.cinnamon.desktop.privacy remember-recent-files false
 
 
 #remove unwanted apps
-sudo apt remove \
+sudo apt -y remove \
 	hexchat \
 	thunderbird \
 	hexchat-common \
@@ -91,7 +91,7 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
 
 #install new software
 
-    sudo apt install \
+    sudo apt -y install \
         youtube-dl \
         vlc \
         vim \
