@@ -41,7 +41,7 @@ gsettings set org.cinnamon show-media-keys-osd 'small'
     #change background
     mkdir /home/$USER/Pictures/wallpapers/
     cp images/surface-pro-6-3840x2160_785686-mm-90.jpg /home/$USER/Pictures/wallpapers/SurfacePro6.jpg
-    gsettings set org.cinnamon.desktop.background picture-uri 'file:///home/server/Pictures/wallpapers/SurfacePro6.jpg'
+    gsettings set org.cinnamon.desktop.background picture-uri "file:///home/$USER/Pictures/wallpapers/SurfacePro6.jpg"
 
     #terminal
     dconf load /org/gnome/terminal/legacy/profiles:/ < ~/Documents/git/LinuxFiles/files/terminalProfiles.dconf
@@ -68,7 +68,7 @@ gsettings set org.cinnamon show-media-keys-osd 'small'
 #panel
 gsettings set org.cinnamon panels-height "['1:40']"
 gsettings set org.cinnamon panel-zone-symbolic-icon-sizes '[{"panelId": 1, "left": 28, "center": 28, "right": 20}]'
-gsettings set org.cinnamon enabled-applets "['panel1:left:0:menu@cinnamon.org:14', 'panel1:left:2:grouped-window-list@cinnamon.org:16', 'panel1:right:3:xapp-status@cinnamon.org:18', 'panel1:right:9:notifications@cinnamon.org:19', 'panel1:right:4:printers@cinnamon.org:20', 'panel1:right:0:removable-drives@cinnamon.org:21', 'panel1:right:6:network@cinnamon.org:24', 'panel1:right:7:sound@cinnamon.org:25', 'panel1:right:8:power@cinnamon.org:26', 'panel1:right:2:systray@cinnamon.org:44', 'panel1:right:1:keyboard@cinnamon.org:45', 'panel1:right:10:calendar@cinnamon.org:46']"
+gsettings set org.cinnamon enabled-applets "['panel1:left:0:menu@cinnamon.org:14', 'panel1:left:2:grouped-window-list@cinnamon.org:16', 'panel1:right:4:xapp-status@cinnamon.org:18', 'panel1:right:10:notifications@cinnamon.org:19', 'panel1:right:1:removable-drives@cinnamon.org:21', 'panel1:right:7:network@cinnamon.org:24', 'panel1:right:8:sound@cinnamon.org:25', 'panel1:right:9:power@cinnamon.org:26', 'panel1:right:3:systray@cinnamon.org:44', 'panel1:right:2:keyboard@cinnamon.org:45', 'panel1:right:11:calendar@cinnamon.org:46']"
 
 
 #desktop icons
@@ -93,6 +93,7 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
 
     sudo apt -y install \
         youtube-dl \
+        ffmpeg \
         vlc \
         vim \
         obs-studio\
