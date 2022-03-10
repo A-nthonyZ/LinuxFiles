@@ -10,6 +10,10 @@ sudo apt upgrade
 sudo apt-get upgrade
 sudo apt autoremove
 
+#privacy
+gsettings set org.cinnamon.desktop.privacy remember-recent-files false
+
+
 #remove unwanted apps
 sudo apt remove \
 	hexchat \
@@ -87,12 +91,17 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
 
 #install new software
 
+    sudo apt install \
+        youtube-dl \
+        vlc \
+        vim \
+
     #Github cli install
-    sudo apt install git
-    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+    sudo apt -y install git
+    sudo apt-key -y adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
     sudo apt-add-repository https://cli.github.com/packages
     sudo apt update
-    sudo apt install gh
+    sudo apt -y install gh
 
     #pia install
     sh ~/Documents/git/LinuxFiles/files/pia-linux-3.3-06906.run
