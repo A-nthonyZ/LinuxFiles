@@ -23,7 +23,7 @@
         "description": "Date format",
         "dependency": "use-custom-format",
         "tooltip": "Set your custom format here.",
-        "value": "%l:%m - %m/%d/%y"
+        "value": "%l:%M - %m/%d/%y"
     },
     "format-button": {
         "type": "button",
