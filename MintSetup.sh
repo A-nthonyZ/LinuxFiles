@@ -92,18 +92,14 @@ gsettings set org.cinnamon.desktop.sound maximum-volume 200
 #install new software
 
     sudo apt -y install \
-        youtube-dl \
         ffmpeg \
         vlc \
-        vim \
-        obs-studio\
 
     #Github cli install
     sudo apt -y install git
     sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
     sudo apt-add-repository https://cli.github.com/packages
     sudo apt update
-    sudo apt -y install gh
 
     #pia install
     sh ~/Documents/git/LinuxFiles/files/pia-linux-3.3-06906.run
